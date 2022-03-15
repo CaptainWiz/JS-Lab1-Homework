@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="text">
+      <form>
+        <p>Tìm kiếm câu đầu tiên chứa từ cần tìm:</p>
+        <textarea id="paragraph">
+`Những suy đOán xung quanh TƯƠNG lai của cầu THỦ 37 tuổi và những lời chỉ trích Anh phải nhận đã liên tục NỔ ra trong vài tuần gần đây. Nhưng Neville tin rằng vấn đề lớn nhất của Man United là hàng phòng ngự kém và thiếu nhất quán của họ: “Hàng thủ Manchester United không tốt lắm, tôi phải nói thẳng; Họ quá mâu thuẫn và không đáng tin cậy! Bạn không thể thực sự tin tưởng họ ? BạN không biết điều gì sẽ xảy ra khi hỌ chơi quá lỏng lẻo`;</textarea
+        >
+        <p>Nhập từ cần tìm kiếm:</p>
+
+        <input type="text" id="word" />
+        <button type="button" onclick="search()">Tìm kiếm</button>
+        <br />
+        Câu đầu tiên chứa từ khoá: <span id="result"> </span>
+      </form>
+      <script>
+        function search() {
+          let word = document.getElementById("word").value;
+          let str = document.getElementById("paragraph").value;
+          text = getFirstSentenceContains(str, word);
+          document.getElementById("result").innerHTML = text;
+        }
+        
+      </script>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
