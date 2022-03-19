@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h1>Tip Calculator</h1>
+
+        <p>Bill Amount</p>
+        <input type="text" class="billAmt" placeholder="Bill Amount" />
+        <p>Number of guests</p>
+        <input type="text" class="numGuest" placeholder="Number of Guests" />
+        <p>Service Quantily</p>
+        <select class="serviceQuantily">
+          <option disabled selected value="0">choose...</option>
+          <option value="0.3">30&#37; &#45; Outstanding</option>
+          <option value="0.2">20&#37; &#45; Good</option>
+          <option value="0.15">15&#37; &#45; It's OK</option>
+          <option value="0.1">10&#37; &#45; Bad</option>
+          <option value="0.05">5&#37; &#45; Terrible</option>
+        </select>
+        <div class="totalTip">
+          <p>Tip $<span class="result"></span> each person</p>
+        </div>
+        <button class="calculate">Calculate</button>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

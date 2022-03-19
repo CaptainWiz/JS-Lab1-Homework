@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(214, 211, 208);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 24;
+  text-align: center;
+}
+.container {
+  margin-top: 10%;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(228, 235, 229);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  margin-top: 50px;
+}
+input {
+  border: 1px solid;
+  height: 30px;
+}
+.calculate {
+  background-image: linear-gradient(to right, #a34444, #d45959);
+  border: none;
+  border-radius: 10px;
+  height: 75px;
+  width: 205px;
+  font-size: x-large;
+  color: rgb(253, 252, 252);
+  font-weight: bolder;
+}
