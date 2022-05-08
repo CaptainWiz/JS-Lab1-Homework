@@ -1,0 +1,19 @@
+table,
+th,
+td,
+tr {
+  border: 1px solid;
+  text-align: center;
+}
+table,
+th,
+td,
+tr {
+  border-collapse: collapse;
+}
+td {
+  max-width: 300px;
+}
+.hidden {
+  display: none;
+}
